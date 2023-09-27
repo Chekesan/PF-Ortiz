@@ -7,16 +7,15 @@
     <link rel="shortcut icon" href="../assets/IMG/logop.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Noticias</title>
 </head>
 
 <body>
-    <div class="container"><!--seccion del header-->
+    <div class="container-fluid"><!--seccion del header-->
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="top">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img class="fs-4" src="../assets/img/aremaq.png" alt="" width="300" height="80">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
+                <img id="logoheader" class="fs-4" src="../assets/img/aremaq.png" alt="logo">
             </a>
 
             <ul class="nav nav-pills">
@@ -30,18 +29,17 @@
     </div>
     <!--termina del header-->
 
-    <div class="container"><!--seccion del footer-->
+    <div class="container-fluid"><!--seccion del footer-->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <img class="bi" src="../assets/img/logop.png" width="30" height="24">
+                <a href="/" class="mb-3 me-2 mb-md-0 lh-1">
+                    <img id="logofoot" class="bi" src="../assets/img/logop.png" alt="logo">
                 </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">&copy;Daniel ortiz Coder house 2023</span>
+                <span class="mb-3 mb-md-0">&copy;Daniel ortiz Coder house 2023</span>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="#top">Ir al comienzo</a></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="mailto:daniel13om@hotmail.com">contactamé</a></li>
+            <ul class="nav col-md-4 justify-content-end list d-flex">
+                <li class="links ms-3"><a href="#top">Ir al comienzo</a></a></li>
+                <li class="links ms-3"><a href="mailto:daniel13om@hotmail.com">contactamé</a></li>
             </ul>
         </footer>
     </div>

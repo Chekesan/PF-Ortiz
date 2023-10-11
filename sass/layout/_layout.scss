@@ -1,0 +1,37 @@
+//estilos generales de las paginas, por header, contenido, y footer y sus links//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: $bg-hd-color;
+}
+
+#contenido {
+    background-color: $bg-cont-color;
+}
+footer {
+    background-color: $bg-ft-color;
+    color: $font-foot-color;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.links a:active {
+    text-decoration: underline;
+    color: aquamarine;
+}
+.links a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+.nav-link{
+    color: black;
+}

@@ -14,7 +14,7 @@ header {
 }
 
 #contenido {
-  background-color: rgba(255, 255, 255, 0.4705882353);
+  background-color: rgba(0, 0, 0, 0.0666666667);
 }
 
 footer {
@@ -66,6 +66,116 @@ footer {
 }
 
 .nos-titulo {
+  font-family: "Permanent Marker", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.cartassocios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.socio {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+@media (min-width: 40rem) {
+  .socio {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .socio {
+    width: 33.3%;
+  }
+}
+.socio .socio-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  align-items: center;
+}
+.socio .socio-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.socio .socio-item:hover .socio-image {
+  opacity: 1;
+}
+.socio .socio-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.5em;
+}
+.socio .socio-titulo {
+  font-size: 20px;
+  line-height: 1.1em;
+  color: black;
+  margin-bottom: 0.2em;
+}
+.socio .socio-image {
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.socio-info a {
+  text-decoration: none;
+  color: darkgreen;
+}
+.socio-info a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.animate__animated:hover {
+  animation-name: flip;
+  animation-duration: 1s;
+}
+
+.socio-image img {
+  height: 200px;
+  width: 200px;
+}
+
+#contact-form {
+  padding: 20px 0;
+  font-family: Lato, sans-serif;
+}
+
+#boton {
+  padding-top: 10px;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.fw-bolder {
   font-family: "Permanent Marker", cursive;
 }
 

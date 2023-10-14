@@ -14,8 +14,7 @@
 <body>
     <div class="container-fluid"><!--seccion del header-->
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="top">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
                 <img id="logoheader" class="fs-4" src="../assets/img/aremaq.png" alt="logo">
             </a>
 
@@ -30,6 +29,90 @@
         </header>
     </div>
     <!--termina del header-->
+
+    <div class="container-fluid" id="contenido">
+
+        <div class="row">
+
+            <div class="col-lg-11 col-lg-offset-2">
+
+
+                <form id="contact-form" method="dialog" action="#" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Nombre *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control"
+                                        placeholder="Escribe tu nombre *" required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Apellido *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control"
+                                        placeholder="Escribe tu apellido *" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control"
+                                        placeholder="escribe tu correo electronico *" required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Celular</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control"
+                                        placeholder="escribe tu telefono">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_message">Mensaje *</label>
+                                    <textarea id="form_message" name="message" class="form-control"
+                                        placeholder="escribe tu solicitud con el mayor detalle posible *" rows="4" required
+                                        data-error="Please,leave us a message."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="tipo de solicitud">Tipo de solicitud *</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Comerciar con los socios
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      Ser parte de los socios
+                                    </label>
+                                    
+                                  </div>
+                            </div>
+                            <div id="boton" class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="enviar solicitud">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
 
     <div class="container-fluid"><!--seccion del footer-->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

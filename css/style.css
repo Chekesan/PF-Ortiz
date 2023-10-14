@@ -18,7 +18,7 @@ header {
 }
 
 footer {
-  background-color: #27374D;
+  background-color: #27374d;
   color: #fff;
 }
 
@@ -104,7 +104,7 @@ footer {
 .socio .socio-item {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: white;
   width: 100%;
   border-radius: 6px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -119,6 +119,26 @@ footer {
   -webkit-transform: scale(1.1);
 }
 .socio .socio-item:hover .socio-image {
+  opacity: 1;
+}
+.socio .socio-item-sec {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  align-items: center;
+}
+.socio .socio-item-sec:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.socio .socio-item-sec:hover .socio-image {
   opacity: 1;
 }
 .socio .socio-info {

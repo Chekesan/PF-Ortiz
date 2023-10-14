@@ -13,6 +13,7 @@
 }
 
 // estilos en socios
+
 .socio {
   display: flex;
   padding: 1rem;
@@ -26,28 +27,13 @@
   @media (min-width: 56rem) {
     width: 33.3%;
   }
-
+//pruebas con mixin
   .socio-item {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    align-items: center;
-
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      .socio-image {
-        opacity: 1;
-      }
-    }
+   @include estilossocios
   }
+.socio-item-sec{
+  @include estilossocios ($fondo: orange)
+}
 
   // Content
   .socio-info {

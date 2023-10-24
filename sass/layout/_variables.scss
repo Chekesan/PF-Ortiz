@@ -10,24 +10,23 @@ $font-style-H: "Permanent Marker", cursive;
 $font-style-T: "Lato", sans-serif;
 //uso mixin//
 @mixin estilossocios($fondo: white) {
-    display: flex;
-    flex-direction: column;
-    background-color: $fondo;
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    align-items: center;
-    
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        .socio-image {
-          opacity: 1;
-        }
-      }
-    
+  display: flex;
+  flex-direction: column;
+  background-color: $fondo;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    .socio-image {
+      opacity: 1;
+    }
+  }
 }

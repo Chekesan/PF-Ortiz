@@ -14,10 +14,10 @@
     <title>Contacta con Aremaq</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="container-fluid"><!--seccion del header-->
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="top">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
+            <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
                 <img id="logoheader" class="fs-4" src="../assets/img/aremaq.png" alt="logo">
             </a>
 
@@ -26,7 +26,7 @@
                 <li class="nav-item"><a href="./nosotros.html" class="nav-link">Que hacemos</a></li>
                 <li class="nav-item"><a href="./asociados.html" class="nav-link">Socios</a></li>
                 <li class="nav-item"><a href="./blog.html" class="nav-link">Noticias</a></li>
-                <li class="nav-item"><a href="./contactanos.html" class="nav-link active"
+                <li class="nav-item"><a id="active" href="./contactanos.html" class="nav-link active"
                         aria-current="page">Contactanos</a></li>
             </ul>
         </header>
@@ -83,25 +83,27 @@
                                 <div class="form-group">
                                     <label for="form_message">Mensaje *</label>
                                     <textarea id="form_message" name="message" class="form-control"
-                                        placeholder="escribe tu solicitud con el mayor detalle posible *" rows="4" required
-                                        data-error="Please,leave us a message."></textarea>
+                                        placeholder="escribe tu solicitud con el mayor detalle posible *" rows="4"
+                                        required data-error="Please,leave us a message."></textarea>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="tipo de solicitud">Tipo de solicitud *</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
-                                      Comerciar con los socios
+                                        Comerciar con los socios
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                      Ser parte de los socios
+                                        Ser parte de los socios
                                     </label>
-                                    
-                                  </div>
+
+                                </div>
                             </div>
                             <div id="boton" class="col-md-12">
                                 <input type="submit" class="btn btn-success btn-send" value="enviar solicitud">
@@ -117,8 +119,8 @@
         </div>
     </div>
 
-    <div class="container-fluid"><!--seccion del footer-->
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="mt-auto"><!--seccion del footer-->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-bottom">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 lh-1">
                     <img id="logofoot" class="bi" src="../assets/img/logop.png" alt="logo">

@@ -7,6 +7,9 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    position: relative;
+    min-height: 100vh
 }
 header {
     background-color: $bg-hd-color;
@@ -14,11 +17,15 @@ header {
 
 #contenido {
     background-color: $bg-cont-color;
+    overflow: auto;
+    padding-bottom: 2.5rem;
 }
 footer {
     background-color: $bg-ft-color;
     color: $font-foot-color;
+   
 }
+
 .links a {
     color: white;
     text-decoration: none;
@@ -32,6 +39,13 @@ footer {
     text-decoration: underline;
     color: aquamarine;
 }
-.nav-link{
+.nav-link {
     color: black;
+    &:hover{
+        background-color: #d5def5;
+    }
+}
+#active{
+    background-color: #8594e4;
+    
 }

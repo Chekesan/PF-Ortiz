@@ -7,6 +7,9 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
@@ -15,6 +18,8 @@ header {
 
 #contenido {
   background-color: rgba(0, 0, 0, 0.0666666667);
+  overflow: auto;
+  padding-bottom: 2.5rem;
 }
 
 footer {
@@ -40,6 +45,13 @@ footer {
 
 .nav-link {
   color: black;
+}
+.nav-link:hover {
+  background-color: #d5def5;
+}
+
+#active {
+  background-color: #8594e4;
 }
 
 #logoheader {
